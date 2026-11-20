@@ -1,1 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Phoebe | Data Analytics &amp; Software Engineering Portfolio</title>
+  <meta name="description" content="Portfolio showcasing Data Analytics, Machine Learning, Financial Valuation, and Full-Stack Backend projects.">
+  <meta name="keywords" content="Data Analytics, Machine Learning, Financial Technology, Python, SQL, MongoDB, Go, Portfolio">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Styles for Text-Based Project Cards -->
+  <style>
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e9ecef;
+      border-top: 4px solid var(--accent-color, #0078ff);
+      border-radius: 8px;
+      padding: 28px 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+    }
+
+    .project-card .project-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent-color, #0078ff);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .project-card h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1e1e1e;
+    }
+
+    .project-card ul.project-bullets {
+      padding-left: 1.1rem;
+      margin-bottom: 18px;
+      font-size: 0.92rem;
+      color: #4e4e4e;
+    }
+
+    .project-card ul.project-bullets li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .project-card .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .project-card .tech-badge {
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .project-card .project-links {
+      border-top: 1px solid #f1f5f9;
+      padding-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-card .project-links a {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Phoebe</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills-certs">Core Competencies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Hi, I'm Phoebe</h2>
+        <p><span class="typed" data-typed-items="Computer Science Undergraduate, Data Analytics Track, AI & ML, Full-Stack Developer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpg" class="img-fluid rounded" alt="Profile Photo">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Phoebe</span></p>
+                <p><strong>Focus: </strong> <span>Data Analytics, AI, Financial Technology</span></p>
+                <p><strong>Languages: </strong> <span>English &amp; Mandarin (Fluent)</span></p>
+                <p>
+                  <strong>Email: </strong>
+                  <a id="user-email" href="mailto:phoebelow.bus@gmail.com">phoebelow.bus@gmail.com</a>
+                  <button type="button" id="copy-email-btn" class="btn btn-sm btn-outline-secondary ms-2 py-0 px-2" title="Copy email address" onclick="copyEmail()">
+                    <i id="copy-email-icon" class="bi bi-clipboard"></i>
+                  </button>
+                  <span id="copy-feedback" class="text-success small ms-1" style="display: none;">Copied!</span>
+                </p>
+                <p><strong>LinkedIn: </strong> <span><a href="https://linkedin.com/in/phoebelowj" target="_blank">linkedin.com/in/phoebelowj</a></span></p>
+                <p><strong>GitHub: </strong> <span><a href="https://github.com/furrbeebs" target="_blank">github.com/furrbeebs</a></span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Technical Stack</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Python (Pandas, PySpark, Scikit-learn, PyTorch, NumPy)</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>SQL &amp; MongoDB (Aggregation &amp; Schema Design)</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>Go (Gin) &amp; REST API Integration</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><span>Data Visualization, DCF Valuation &amp; MS Office Suite</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About Me</h4>
+              <p>
+                I am a Computer Science undergraduate specialising in <strong>Data Analytics and Financial Technology</strong> with a minor in <strong>Artificial Intelligence</strong>. I focus on transforming raw datasets and manual business workflows into data-driven decisions and scalable digital tools, spanning predictive machine learning, time-series anomaly detection, quantitative financial valuation, and automated ETL pipelines in Python, SQL, MongoDB, and Go.
+              </p>
+              <p>
+                With a strong foundation in <strong>Python and predictive modeling</strong>, I strive to bridge analytical rigor with intuitive, user-centric software delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience &amp; Education</h2>
+        <p>Hands-on industry engineering, data automation, and academic background</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education &amp; Certifications</h3>
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Engineering (Computer Science and Design)</h4>
+              <h5>Expected Graduation: May 2027</h5>
+              <p>Singapore University of Technology and Design (SUTD)</p>
+              <p><em>Specialisation in Data Analytics | Minor in Artificial Intelligence</em></p>
+              <p><strong>Relevant Coursework:</strong> Machine Learning, Deep Learning, Statistical Modeling, Database Systems, UI/UX, Quantitative Finance &amp; Investing</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>MongoDB Verified Certifications</h4>
+              <h5>Completed</h5>
+              <ul>
+                <li>MongoDB Aggregation Fundamentals</li>
+                <li>MongoDB Schema Design Patterns and Anti-patterns</li>
+                <li>Building AI Agents with MongoDB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Work Experience</h3>
+
+            <!-- Experience 1: Current Internship -->
+            <div class="resume-item">
+              <h4>Digital Business Enablement Intern</h4>
+              <h5>May 2026 – Aug 2026</h5>
+              <p><em>Sentosa Development Corporation, Singapore</em></p>
+              <ul>
+                <li><strong>Architected</strong> an end-to-end transactional ticketing integration in collaboration with <strong>Fever</strong> from scratch using <strong>Go</strong>, <strong>Gin</strong>, and <strong>HTML/JS</strong> across catalog discovery, inventory search, cart confirmation, order retrieval, and live booking simulation.</li>
+                <li><strong>Developed</strong> an automated <strong>Python</strong> ETL script to parse and flatten nested Gen-AI/LLM JSON outputs into structured Excel spreadsheets, streamlining procurement evaluations for business stakeholders.</li>
+                <li><strong>Audited</strong> <code>sentosa.com.sg</code> accessibility via <strong>Oobee</strong> scans, categorising 100+ <strong>WCAG 1.4.3</strong> colour contrast defects and delivering an annotated remediation report to Digital Marketing and external vendor <strong>Section</strong>.</li>
+                <li><strong>Prototyped</strong> an automated refund ticketing system using GovTech OGPs (<strong>GatherSG</strong>, <strong>Plumber</strong> <strong>FormSG</strong>) during a corporate internal hackathon, replacing manual email threads with structured tracking workflows.</li>
+              </ul>
+            </div>
+
+            <!-- Experience 2: ASMPT Internship -->
+            <div class="resume-item">
+              <h4>Technical Support Intern</h4>
+              <h5>Sep 2022 – Feb 2023</h5>
+              <p><em>ASMPT SMT Singapore Pte Ltd, Singapore</em></p>
+              <ul>
+                <li><strong>Authored</strong> and modernised Operation, Maintenance, and Technical eLearning modules for <strong>SIPLACE</strong> SMT machinery alongside ASMPT's Workplace Safety and Health (WSH) guidelines, standardising technical training for internal staff and external clients.</li>
+                <li><strong>Produced</strong> step-by-step visual troubleshooting and part-exchange manuals in <strong>PowerPoint</strong> for field Service Engineers, accelerating on-site hardware diagnostics and maintenance turnaround times.</li>
+                <li><strong>Diagnosed</strong> and repaired <strong>SIPLACE</strong> machine hardware and system faults in collaboration with R&amp;D and Technical Support departments, improving equipment reliability and root-cause resolution workflows.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section (Text & Bullet Cards — No Images) -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <p>Filter by domain to explore the different types of projects</p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ml">Data &amp; ML</li>
+            <li data-filter=".filter-finance">Finance &amp; Analytics</li>
+            <li data-filter=".filter-web">Backend &amp; Web Apps</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Project 1: Robot Sensor Anomaly Detection -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Deep Learning &bull; Time-Series</span>
+                  <h4>Robot Sensor Anomaly Detection</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Data Pipeline:</strong> Processed 5-second multivariate sensor sequences (20 timesteps &times; 15 features) for mechanical fault detection.</li>
+                    <li><strong>Model Benchmarking:</strong> Implemented and compared unsupervised <strong>MLP &amp; LSTM Autoencoders</strong> against a supervised many-to-one <strong>LSTM Classifier</strong>.</li>
+                    <li><strong>Outcome:</strong> Evaluated reconstruction error thresholds vs. sequence classification accuracy to improve predictive maintenance reliability.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">PyTorch</span>
+                    <span class="tech-badge">LSTM</span>
+                    <span class="tech-badge">Jupyter</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=sensor">Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <a href="https://github.com/furrbeebs/Deep-Learning-Project" target="_blank"><i class="bi bi-github"></i> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Crop Yield Predictor -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Machine Learning &bull; Predictive Analytics</span>
+                  <h4>Agricultural Crop Yield Predictor</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Objective:</strong> Analysed how farming practices—pesticide use, fertiliser application, and organic farming—impact crop yield variance.</li>
+                    <li><strong>Methodology:</strong> Performed exploratory data analysis (EDA), feature engineering, and regression modeling in <strong>Scikit-learn</strong>.</li>
+                    <li><strong>Outcome:</strong> Identified key input drivers and delivered data-backed recommendations to optimise agricultural productivity.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">Jupyter</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=crop">Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <a href="https://github.com/aaj1510/Climate-Changes-effects-on-produce-yields" target="_blank"><i class="bi bi-github"></i> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Alphabet Equity Research & Stock Pitch -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Quantitative Finance &bull; Equity Research</span>
+                  <h4>Alphabet Inc. (GOOGL) Stock Pitch</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Intrinsic Valuation:</strong> Built a Discounted Cash Flow (<strong>DCF</strong>) model projecting Free Cash Flows, Terminal Value, and <strong>WACC</strong> derived via <strong>CAPM</strong>.</li>
+                    <li><strong>Relative Valuation:</strong> Benchmarked forward <strong>P/E</strong> multiples and cloud/ads moat durability against big-tech peers.</li>
+                    <li><strong>Outcome:</strong> Synthesised financial risk factors into an institutional-style equity research report and investment recommendation.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">DCF Modeling</span>
+                    <span class="tech-badge">CAPM / WACC</span>
+                    <span class="tech-badge">P/E Multiples</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=alphabet">Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <!--<a href="https://github.com/furrbeebs" target="_blank"><i class="bi bi-file-earmark-bar-graph"></i> Report</a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Fever Transactional Ticketing System -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Backend Engineering &bull; REST APIs</span>
+                  <h4>Transactional Ticketing Integration</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Modular Go Client:</strong> Built a typed Go package separating API handlers (<code>api/</code>) and schemas (<code>models/</code>) for partner ticketing endpoints.</li>
+                    <li><strong>Booking Pipeline:</strong> Engineered a Gin REST server handling catalog discovery, slot search, cart lifecycle, and order retrieval.</li>
+                    <li><strong>Interactive Booking Simulation:</strong> Developed HTML/JS frontend simulator with staging inventory, sold-out state handling, and barcode ticket generation.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">Go (Gin)</span>
+                    <span class="tech-badge">REST APIs</span>
+                    <span class="tech-badge">JSON</span>
+                    <span class="tech-badge">HTML/JS</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=fever">Architecture Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <span class="text-muted small"><i class="bi bi-lock-fill"></i> Proprietary (Internship)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Hotel Booking Web Platform -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Full-Stack Web &bull; Database Design</span>
+                  <h4>StayInn (Hotel Booking Web Platform)</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Core Functionality:</strong> Engineered a full-stack reservation platform supporting multi-criteria room search, dynamic pricing, and booking management.</li>
+                    <li><strong>Data Modeling:</strong> Designed normalised database schemas to prevent double-bookings and track real-time room inventory states.</li>
+                    <li><strong>Outcome:</strong> Delivered a responsive end-to-end user flow from property discovery to reservation confirmation.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">Full-Stack Web</span>
+                    <span class="tech-badge">SQL / Schema</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">UI/UX</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=hotel">Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <div class="d-flex gap-3">
+                      <a href="https://tinyurl.com/482jkkee" target="_blank"><i class="bi bi-youtube"></i> Demo</a>
+                      <a href="https://github.com/WindJammer6/34.-StayInn" target="_blank"><i class="bi bi-github"></i> Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Self-Care & Habit Tracking App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div>
+                  <span class="project-tag">Application Dev &bull; User Analytics</span>
+                  <h4>PlantBuddy (Self-Care App)</h4>
+                  <ul class="project-bullets">
+                    <li><strong>Core Functionality:</strong> Built an interactive self-care and habit-tracking application designed around daily mood logging and routine streaks.</li>
+                    <li><strong>Data Insights:</strong> Structured user activity logs to visualise daily/weekly completion rates and behavioural consistency trends.</li>
+                    <li><strong>Outcome:</strong> Combined clean, accessible UI design with persistent state tracking to encourage daily user engagement.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-badges">
+                    <span class="tech-badge">App Dev</span>
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">API Integration</span>
+                    <span class="tech-badge">XML</span>
+                  </div>
+                  <div class="project-links">
+                    <!--<a href="portfolio-details.html?project=selfcare">Case Study <i class="bi bi-arrow-right"></i></a>-->
+                    <div class="d-flex gap-3">
+                      <a href="https://tinyurl.com/4ksztu47" target="_blank"><i class="bi bi-youtube"></i> Demo</a>
+                      <a href="https://github.com/furrbeebs/PlantBuddy" target="_blank"><i class="bi bi-github"></i> Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Core Competencies Section -->
+    <section id="skills-certs" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Core Competencies</h2>
+        <p>Key technical capabilities across data analytics, modeling, and software delivery</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Predictive &amp; Deep Learning</h3>
+              <p>Designing supervised and unsupervised models (Autoencoders, LSTMs, Regression) using Python, PyTorch, and Scikit-learn for time-series and tabular datasets.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-database-gear"></i>
+              </div>
+              <h3>ETL &amp; Data Engineering</h3>
+              <p>Building automated pipelines in Python and Go to ingest, flatten, and validate nested JSON/LLM outputs into structured SQL, MongoDB, and Excel formats.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-window-stack"></i>
+              </div>
+              <h3>Full-Stack &amp; API Integration</h3>
+              <p>Developing RESTful services in Go (Gin) and responsive web interfaces that connect external partner APIs with intuitive, accessible user workflows.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Core Competencies Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Open to Data Analytics, FinTech, Data Science, and Software Engineering opportunities</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://linkedin.com/in/phoebelowj" target="_blank">linkedin.com/in/phoebelowj</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-github flex-shrink-0"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <p><a href="https://github.com/furrbeebs" target="_blank">github.com/furrbeebs</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:phoebelow.bus@gmail.com">phoebelow.bus@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Phoebe Low</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/furrbeebs" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/phoebelowj" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://tinyurl.com/sfdvmcj9" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  function copyEmail() {
+    const emailText = document.getElementById('user-email').innerText.trim();
+    navigator.clipboard.writeText(emailText).then(() => {
+      const icon = document.getElementById('copy-email-icon');
+      const feedback = document.getElementById('copy-feedback');
+      
+      icon.classList.remove('bi-clipboard');
+      icon.classList.add('bi-check-lg', 'text-success');
+      feedback.style.display = 'inline';
+
+      setTimeout(() => {
+        icon.classList.remove('bi-check-lg', 'text-success');
+        icon.classList.add('bi-clipboard');
+        feedback.style.display = 'none';
+      }, 2000);
+    });
+  }
+</script>
+</body>
+
+</html>
